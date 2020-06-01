@@ -7,7 +7,7 @@ Installation
 
 ::
 
-    pip install django-detect
+    pip install django-platform-detect
 
 
 Usage
@@ -17,39 +17,35 @@ Usage
 
     # ####### Device、OS #######
     # Windows
-    request.Windows
+    request.windows
     # Linux
-    request.Linux
-    # iMac/iPhone/iPad/iPod
-    request.iMac
-    request.iPhone
-    request.iPad
-    request.iPod
-    # PC
-    request.PC = request.Windows or request.Linux or request.iMac
+    request.linux
+    # macOS/iPhone/iPad/iPod
+    request.imac
+    request.iphone
+    request.ipad
+    request.ipod
+    # desktop
+    request.desktop = request.Windows or request.Linux or request.iMac
     # iOS
     request.iOS = request.iPhone or request.iPad or request.iMac or request.iPod
     # Android and Version
-    request.Android
-    request.Android.version
+    request.android
+    request.android.version
 
-    # ####### APP #######
-    # Weixin／Wechat and Version
-    request.weixin
-    request.weixin.version
-    request.wechat
-    request.wechat.version
+
 
 
 Settings.py
 ===========
 
 ::
-
-    # Use `MIDDLEWARE_CLASSES` prior to Django 1.10
+    # Add to `settings.MIDDLEWARE`
     MIDDLEWARE = (
         ...
         'detect.middleware.UserAgentDetectionMiddleware',
         ...
     )
+
+
 

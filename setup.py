@@ -6,10 +6,10 @@ version = '1.0.18'
 
 
 setup(
-    name='django-detect',
+    name='django-platform-detect',
     version=version,
-    keywords='django-detect',
-    description='Django UserAgent Detect',
+    keywords='django-platform-detect',
+    description='Django UserAgent Detection',
     long_description=open('README.rst').read(),
 
     url='https://github.com/Brightcells/django-detect',
