@@ -47,4 +47,5 @@ class PlatformInfo():
         # Android
         self.android = PlatformInfo.tfv(ua, pattern=r'android ([\d.]+)', s='android')
 
+        # mobile platform
         self.mobile = self.ios or self.android

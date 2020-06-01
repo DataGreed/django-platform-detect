@@ -48,4 +48,6 @@ Settings.py
     )
 
 
-
+Thanks
+===========
+Based on https://github.com/django-xxx/django-detect
